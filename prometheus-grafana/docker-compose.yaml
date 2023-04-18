@@ -44,7 +44,7 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
       # - /cgroup:/cgroup:ro
     ports:
-      - 8080:8080
+      - 10080:10080
     restart: always
 
   node-exporter:

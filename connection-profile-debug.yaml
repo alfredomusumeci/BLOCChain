@@ -1,0 +1,184 @@
+name: "test-network"
+x-type: "hlfv2"
+version: "1.0"
+client:
+  organization: Org1
+  connection:
+    timeout:
+      peer:
+        endorser: '300'
+        eventHub: '60'
+        eventReg: '60'
+      orderer: '300'
+
+channels:
+  mychannel:
+    peers:
+      peer0.org1.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+      peer0.org2.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+      peer0.org3.example.com:
+        endorsingPeer: false
+        chaincodeQuery: false
+
+organizations:
+  Org1:
+    mspid: Org1MSP
+    peers:
+    - peer0.org1.example.com
+    certificateAuthorities:
+    - ca.org1.example.com
+
+  Org2:
+    mspid: Org2MSP
+    peers:
+    - peer0.org2.example.com
+    certificateAuthorities:
+    - ca.org2.example.com
+
+  Org3:
+    mspid: Org3MSP
+    peers:
+    - peer0.org3.example.com
+    certificateAuthorities:
+    - ca.org3.example.com
+
+orderers:
+  orderer.example.com:
+    url: grpcs://localhost:7050
+    tlsCACerts:
+      path: /home/alfredo/go/src/github.com/alfredom/fabric-samples/test-network-3-orgs/explorer/organizations/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+
+peers:
+  peer0.org1.example.com:
+    url: grpcs://localhost:7051
+    tlsCACerts:
+      path: /home/alfredo/go/src/github.com/alfredom/fabric-samples/test-network-3-orgs/explorer/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+
+  peer0.org2.example.com:
+    url: grpcs://localhost:9051
+    tlsCACerts:
+      path: /home/alfredo/go/src/github.com/alfredom/fabric-samples/test-network-3-orgs/explorer/organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/tlscacerts/tlsca.org2.example.com-cert.pem
+
+  peer0.org3.example.com:
+    url: grpcs://localhost:11051
+    tlsCACerts:
+      path: /home/alfredo/go/src/github.com/alfredom/fabric-samples/test-network-3-orgs/explorer/organizations/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/tlscacerts/tlsca.org3.example.com-cert.pem
+
+certificateAuthorities:
+  ca.org1.example.com:
+    url: https://localhost:7054
+    caName: ca-org1
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICUjCCAfigAwIBAgIRANbMFWkAJHDMVpj7fNvnTwEwCgYIKoZIzj0EAwIwczEL
+          MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+          cmFuY2lzY28xGTAXBgNVBAoTEG9yZzEuZXhhbXBsZS5jb20xHDAaBgNVBAMTE2Nh
+          Lm9yZzEuZXhhbXBsZS5jb20wHhcNMjMwNDA4MTMxMzAwWhcNMzMwNDA1MTMxMzAw
+          WjBzMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMN
+          U2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQb3JnMS5leGFtcGxlLmNvbTEcMBoGA1UE
+          AxMTY2Eub3JnMS5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+          BHzC83Wma24icfl0KpxeCswXI3p/YEAagm3E1BsBZtwrhaLeyZR1JI/4HHZqaau0
+          QdE3EiK5XMWrXMUksum/CTCjbTBrMA4GA1UdDwEB/wQEAwIBpjAdBgNVHSUEFjAU
+          BggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zApBgNVHQ4EIgQg
+          8woCxZj4VW+GbOWlbBBhY5f3543Dv/oLcCYLxDHvlB4wCgYIKoZIzj0EAwIDSAAw
+          RQIgFtBlx7ooBo4qN8g3JU16c2yhuEWK1jc/v3EKputGpWYCIQCz0hjQEtLxbsc8
+          exfTJO+Nji0hCyZPbwg2B+KUMvJEjw==
+          -----END CERTIFICATE-----
+          
+    httpOptions:
+      verify: false
+
+  ca.org2.example.com:
+    url: https://localhost:8054
+    caName: ca-org2
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICUjCCAfigAwIBAgIRAIcSDflQ8n2CtV7vO6n58kcwCgYIKoZIzj0EAwIwczEL
+          MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+          cmFuY2lzY28xGTAXBgNVBAoTEG9yZzIuZXhhbXBsZS5jb20xHDAaBgNVBAMTE2Nh
+          Lm9yZzIuZXhhbXBsZS5jb20wHhcNMjMwNDA4MTMxMzAwWhcNMzMwNDA1MTMxMzAw
+          WjBzMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMN
+          U2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQb3JnMi5leGFtcGxlLmNvbTEcMBoGA1UE
+          AxMTY2Eub3JnMi5leGFtcGxlLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+          BNFtCoqP1JkCWG12q/k+8Bq/+ZNCzvdOlmNhH46fZw0T7hxMbB2nVNk+5C+3lNZV
+          h78p5obbFjUNZSxKHGuF/DWjbTBrMA4GA1UdDwEB/wQEAwIBpjAdBgNVHSUEFjAU
+          BggrBgEFBQcDAgYIKwYBBQUHAwEwDwYDVR0TAQH/BAUwAwEB/zApBgNVHQ4EIgQg
+          3mjvdWqpQYfb0MGdiMXDr5JxTG/j0S46D4Cg6I4ttzgwCgYIKoZIzj0EAwIDSAAw
+          RQIhAMgDl7krSNZlgAsHuKKoAq1RLC9eb+eZBD3NIkKVy3P4AiAu3dtDdltSSP5P
+          wzqiYkLsi2y5wSqvyGY4/bUWJrF7kA==
+          -----END CERTIFICATE-----
+          
+    httpOptions:
+      verify: false
+
+  ca.org3.example.com:
+    url: https://localhost:11054
+    caName: ca-org3
+    tlsCACerts:
+      pem: 
+        - |
+          -----BEGIN CERTIFICATE-----
+          MIICUTCCAfegAwIBAgIQAVCg5XKpsyegsUqUtLLe5jAKBggqhkjOPQQDAjBzMQsw
+          CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+          YW5jaXNjbzEZMBcGA1UEChMQb3JnMy5leGFtcGxlLmNvbTEcMBoGA1UEAxMTY2Eu
+          b3JnMy5leGFtcGxlLmNvbTAeFw0yMzA0MDgxMzE3MDBaFw0zMzA0MDUxMzE3MDBa
+          MHMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1T
+          YW4gRnJhbmNpc2NvMRkwFwYDVQQKExBvcmczLmV4YW1wbGUuY29tMRwwGgYDVQQD
+          ExNjYS5vcmczLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+          KUt3XB2sZPGBjeSy/R1dSO9i0nYprfdp+1JSbdG83lLzBaWO6hCrU0tsip1dA+UF
+          mQBL9xptKXGwGvNIwYEGHaNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQG
+          CCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCAD
+          JxLQ4c+s7OOupTPAvUquT7JiSi45gFNYguzKXeC3UjAKBggqhkjOPQQDAgNIADBF
+          AiA26pCp8yggA25mBp3iLnyHqpeKOeECGlahJXaqe4LQWQIhAK0WL2Y1HN5Zzrt/
+          nNq0RFzs0Kt7x7iqW76z7WiqtjM8
+          -----END CERTIFICATE-----
+          
+    httpOptions:
+      verify: false
+
+entityMatchers:
+  peer:
+    - pattern: peer0.org1.example.(\w+)
+      urlSubstitutionExp: localhost:7051
+      sslTargetOverrideUrlSubstitutionExp: peer0.org1.example.com
+      mappedHost: peer0.org1.example.com
+
+    - pattern: peer0.org2.example.(\w+)
+      urlSubstitutionExp: localhost:9051
+      sslTargetOverrideUrlSubstitutionExp: peer0.org2.example.com
+      mappedHost: peer0.org2.example.com
+
+    - pattern: peer0.org3.example.(\w+)
+      urlSubstitutionExp: localhost:11051
+      sslTargetOverrideUrlSubstitutionExp: peer0.org3.example.com
+      mappedHost: peer0.org3.example.com
+
+  orderer:
+    - pattern: (\w+).example.(\w+)
+      urlSubstitutionExp: localhost:7050
+      sslTargetOverrideUrlSubstitutionExp: orderer.example.com
+      mappedHost: orderer.example.com
+
+  certificateAuthority:
+    - pattern: (\w+).org1.example.(\w+)
+      urlSubstitutionExp: https://localhost:7054
+      sslTargetOverrideUrlSubstitutionExp: ca.org1.example.com
+      mappedHost: ca.org1.example.com
+
+    - pattern: (\w+).org2.example.(\w+)
+      urlSubstitutionExp: https://localhost:8054
+      sslTargetOverrideUrlSubstitutionExp: ca.org2.example.com
+      mappedHost: ca.org2.example.com
+
+    - pattern: (\w+).org3.example.(\w+)
+      urlSubstitutionExp: https://localhost:11054
+      sslTargetOverrideUrlSubstitutionExp: ca.org3.example.com
+      mappedHost: ca.org3.example.com
