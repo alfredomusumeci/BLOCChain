@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 #
 # Copyright IBM Corp All Rights Reserved
@@ -259,7 +257,9 @@ function networkUp() {
   fi
 
   DOCKER_SOCK="${DOCKER_SOCK}" ${CONTAINER_CLI_COMPOSE} ${COMPOSE_FILES} up -d 2>&1
+#  DOCKER_SOCK="${DOCKER_SOCK}" ${CONTAINER_CLI_COMPOSE} ${COMPOSE_FILES} up
 
+  echo "Displaying containers"
   $CONTAINER_CLI ps -a
   if [ $? -ne 0 ]; then
     fatalln "Unable to start network"

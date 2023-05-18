@@ -257,7 +257,10 @@ func (b *bucket) Reset() {
 		putChunk(chunks[i])
 		chunks[i] = nil
 	}
-	b.m = make(map[uint64]uint64)
+	bm := b.m
+	for k := range bm {
+		delete(bm, k)
+	}
 	b.idx = 0
 	b.gen = 1
 	atomic.StoreUint64(&b.getCalls, 0)

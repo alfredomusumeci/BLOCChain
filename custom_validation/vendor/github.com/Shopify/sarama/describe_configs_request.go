@@ -61,6 +61,7 @@ func (r *DescribeConfigsRequest) decode(pd packetDecoder, version int16) (err er
 		r.Resources[i].Name = name
 
 		confLength, err := pd.getArrayLength()
+
 		if err != nil {
 			return err
 		}
@@ -99,14 +100,10 @@ func (r *DescribeConfigsRequest) version() int16 {
 	return r.Version
 }
 
-func (r *DescribeConfigsRequest) headerVersion() int16 {
-	return 1
-}
-
 func (r *DescribeConfigsRequest) requiredVersion() KafkaVersion {
 	switch r.Version {
 	case 1:
-		return V1_1_0_0
+		return V1_0_0_0
 	case 2:
 		return V2_0_0_0
 	default:

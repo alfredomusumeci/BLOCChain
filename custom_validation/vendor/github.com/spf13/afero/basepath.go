@@ -1,7 +1,6 @@
 package afero
 
 import (
-	"io/fs"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -9,10 +8,7 @@ import (
 	"time"
 )
 
-var (
-	_ Lstater        = (*BasePathFs)(nil)
-	_ fs.ReadDirFile = (*BasePathFile)(nil)
-)
+var _ Lstater = (*BasePathFs)(nil)
 
 // The BasePathFs restricts all operations to a given path within an Fs.
 // The given file name to the operations on this Fs will be prepended with
@@ -35,14 +31,6 @@ type BasePathFile struct {
 func (f *BasePathFile) Name() string {
 	sourcename := f.File.Name()
 	return strings.TrimPrefix(sourcename, filepath.Clean(f.path))
-}
-
-func (f *BasePathFile) ReadDir(n int) ([]fs.DirEntry, error) {
-	if rdf, ok := f.File.(fs.ReadDirFile); ok {
-		return rdf.ReadDir(n)
-
-	}
-	return readDirFile{f.File}.ReadDir(n)
 }
 
 func NewBasePathFs(source Fs, path string) Fs {
@@ -93,13 +81,6 @@ func (b *BasePathFs) Chmod(name string, mode os.FileMode) (err error) {
 		return &os.PathError{Op: "chmod", Path: name, Err: err}
 	}
 	return b.source.Chmod(name, mode)
-}
-
-func (b *BasePathFs) Chown(name string, uid, gid int) (err error) {
-	if name, err = b.RealPath(name); err != nil {
-		return &os.PathError{Op: "chown", Path: name, Err: err}
-	}
-	return b.source.Chown(name, uid, gid)
 }
 
 func (b *BasePathFs) Name() string {
@@ -221,3 +202,5 @@ func (b *BasePathFs) ReadlinkIfPossible(name string) (string, error) {
 	}
 	return "", &os.PathError{Op: "readlink", Path: name, Err: ErrNoReadlink}
 }
+
+// vim: ts=4 sw=4 noexpandtab nolist syn=go

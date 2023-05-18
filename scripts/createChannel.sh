@@ -58,6 +58,15 @@ joinChannel() {
   setGlobals $ORG
 	local rc=1
 	local COUNTER=1
+
+#	echo "Copying plugins to containers"
+#	docker ps --format "table {{.Names}}\t{{.ID}}" | tr -s ' ' > mylog.txt
+#  CONTAINER1=$(docker ps --format "table {{.Names}}\t{{.ID}}" | tr -s ' ' | grep ^p | grep peer0.org1.example.com | awk '{print $2}')
+#  docker exec -it "$CONTAINER1" sh -c "mkdir -p /etc/hyperledger/fabric/plugins"
+#  docker cp /home/alfredo/go/src/github.com/alfredom/fabric-samples/test-network-3-orgs/custom_validation/sample_validation_mesl_alpine.so "$CONTAINER1":/etc/hyperledger/fabric/plugins
+#  echo "Displaying if the file is present"
+#  docker exec -it "$CONTAINER1" sh -c "cd /etc/hyperledger/fabric/plugins && ls"
+
 	## Sometimes Join takes time, hence retry
 	while [ $rc -ne 0 -a $COUNTER -lt $MAX_RETRY ] ; do
     sleep $DELAY

@@ -1,31 +1,245 @@
-# github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1
-## explicit; go 1.16
+# github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
+## explicit
 github.com/Azure/go-ansiterm
 github.com/Azure/go-ansiterm/winterm
+# github.com/DataDog/zstd v1.4.5
+## explicit
+github.com/DataDog/zstd
+# github.com/IBM/mathlib v0.0.0-20220112091634-0a7378db6912
+## explicit; go 1.16
+github.com/IBM/mathlib
+github.com/IBM/mathlib/driver
+github.com/IBM/mathlib/driver/amcl
+github.com/IBM/mathlib/driver/common
+github.com/IBM/mathlib/driver/gurvy
 # github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
 ## explicit
 github.com/Knetic/govaluate
-# github.com/Microsoft/go-winio v0.6.0
-## explicit; go 1.17
+# github.com/Microsoft/go-winio v0.5.2
+## explicit; go 1.13
 github.com/Microsoft/go-winio
-github.com/Microsoft/go-winio/internal/socket
 github.com/Microsoft/go-winio/pkg/guid
-# github.com/Shopify/sarama v1.38.1
-## explicit; go 1.17
+github.com/Microsoft/go-winio/pkg/security
+github.com/Microsoft/go-winio/vhd
+# github.com/Microsoft/hcsshim v0.8.25
+## explicit; go 1.13
+github.com/Microsoft/hcsshim
+github.com/Microsoft/hcsshim/computestorage
+github.com/Microsoft/hcsshim/internal/cow
+github.com/Microsoft/hcsshim/internal/hcs
+github.com/Microsoft/hcsshim/internal/hcs/schema1
+github.com/Microsoft/hcsshim/internal/hcs/schema2
+github.com/Microsoft/hcsshim/internal/hcserror
+github.com/Microsoft/hcsshim/internal/hns
+github.com/Microsoft/hcsshim/internal/interop
+github.com/Microsoft/hcsshim/internal/log
+github.com/Microsoft/hcsshim/internal/logfields
+github.com/Microsoft/hcsshim/internal/longpath
+github.com/Microsoft/hcsshim/internal/mergemaps
+github.com/Microsoft/hcsshim/internal/oc
+github.com/Microsoft/hcsshim/internal/safefile
+github.com/Microsoft/hcsshim/internal/timeout
+github.com/Microsoft/hcsshim/internal/vmcompute
+github.com/Microsoft/hcsshim/internal/wclayer
+github.com/Microsoft/hcsshim/internal/winapi
+github.com/Microsoft/hcsshim/osversion
+# github.com/Shopify/sarama v1.20.1
+## explicit
 github.com/Shopify/sarama
-# github.com/VictoriaMetrics/fastcache v1.12.1
+# github.com/Shopify/toxiproxy v2.1.4+incompatible
+## explicit
+# github.com/VictoriaMetrics/fastcache v1.9.0
 ## explicit; go 1.13
 github.com/VictoriaMetrics/fastcache
-# github.com/cespare/xxhash/v2 v2.2.0
+# github.com/alfredom/fabric-fork v0.0.0-00010101000000-000000000000 => /home/alfredo/go/src/github.com/alfredom/fabric-fork
+## explicit; go 1.20
+github.com/alfredom/fabric-fork/bccsp
+github.com/alfredom/fabric-fork/bccsp/factory
+github.com/alfredom/fabric-fork/bccsp/pkcs11
+github.com/alfredom/fabric-fork/bccsp/signer
+github.com/alfredom/fabric-fork/bccsp/sw
+github.com/alfredom/fabric-fork/bccsp/utils
+github.com/alfredom/fabric-fork/common/capabilities
+github.com/alfredom/fabric-fork/common/cauthdsl
+github.com/alfredom/fabric-fork/common/chaincode
+github.com/alfredom/fabric-fork/common/channelconfig
+github.com/alfredom/fabric-fork/common/configtx
+github.com/alfredom/fabric-fork/common/configtx/test
+github.com/alfredom/fabric-fork/common/crypto
+github.com/alfredom/fabric-fork/common/crypto/tlsgen
+github.com/alfredom/fabric-fork/common/deliver
+github.com/alfredom/fabric-fork/common/errors
+github.com/alfredom/fabric-fork/common/flogging
+github.com/alfredom/fabric-fork/common/flogging/fabenc
+github.com/alfredom/fabric-fork/common/genesis
+github.com/alfredom/fabric-fork/common/ledger
+github.com/alfredom/fabric-fork/common/ledger/blkstorage
+github.com/alfredom/fabric-fork/common/ledger/blockledger
+github.com/alfredom/fabric-fork/common/ledger/blockledger/fileledger
+github.com/alfredom/fabric-fork/common/ledger/dataformat
+github.com/alfredom/fabric-fork/common/ledger/snapshot
+github.com/alfredom/fabric-fork/common/ledger/util
+github.com/alfredom/fabric-fork/common/ledger/util/leveldbhelper
+github.com/alfredom/fabric-fork/common/metrics
+github.com/alfredom/fabric-fork/common/metrics/disabled
+github.com/alfredom/fabric-fork/common/policies
+github.com/alfredom/fabric-fork/common/policydsl
+github.com/alfredom/fabric-fork/common/semaphore
+github.com/alfredom/fabric-fork/common/util
+github.com/alfredom/fabric-fork/common/viperutil
+github.com/alfredom/fabric-fork/core/aclmgmt
+github.com/alfredom/fabric-fork/core/aclmgmt/resources
+github.com/alfredom/fabric-fork/core/chaincode/implicitcollection
+github.com/alfredom/fabric-fork/core/chaincode/lifecycle
+github.com/alfredom/fabric-fork/core/chaincode/persistence
+github.com/alfredom/fabric-fork/core/committer
+github.com/alfredom/fabric-fork/core/committer/txvalidator
+github.com/alfredom/fabric-fork/core/committer/txvalidator/plugin
+github.com/alfredom/fabric-fork/core/committer/txvalidator/v14
+github.com/alfredom/fabric-fork/core/committer/txvalidator/v20
+github.com/alfredom/fabric-fork/core/committer/txvalidator/v20/plugindispatcher
+github.com/alfredom/fabric-fork/core/committer/txvalidator/v20/valinforetriever
+github.com/alfredom/fabric-fork/core/common/ccpackage
+github.com/alfredom/fabric-fork/core/common/ccprovider
+github.com/alfredom/fabric-fork/core/common/privdata
+github.com/alfredom/fabric-fork/core/common/sysccprovider
+github.com/alfredom/fabric-fork/core/common/validation
+github.com/alfredom/fabric-fork/core/common/validation/statebased
+github.com/alfredom/fabric-fork/core/config
+github.com/alfredom/fabric-fork/core/config/configtest
+github.com/alfredom/fabric-fork/core/container
+github.com/alfredom/fabric-fork/core/container/ccintf
+github.com/alfredom/fabric-fork/core/container/externalbuilder
+github.com/alfredom/fabric-fork/core/deliverservice
+github.com/alfredom/fabric-fork/core/dispatcher
+github.com/alfredom/fabric-fork/core/handlers/validation/api
+github.com/alfredom/fabric-fork/core/handlers/validation/api/capabilities
+github.com/alfredom/fabric-fork/core/handlers/validation/api/identities
+github.com/alfredom/fabric-fork/core/handlers/validation/api/policies
+github.com/alfredom/fabric-fork/core/handlers/validation/api/state
+github.com/alfredom/fabric-fork/core/handlers/validation/builtin/v12
+github.com/alfredom/fabric-fork/core/handlers/validation/builtin/v13
+github.com/alfredom/fabric-fork/core/handlers/validation/builtin/v20
+github.com/alfredom/fabric-fork/core/ledger
+github.com/alfredom/fabric-fork/core/ledger/cceventmgmt
+github.com/alfredom/fabric-fork/core/ledger/confighistory
+github.com/alfredom/fabric-fork/core/ledger/internal/version
+github.com/alfredom/fabric-fork/core/ledger/kvledger
+github.com/alfredom/fabric-fork/core/ledger/kvledger/bookkeeping
+github.com/alfredom/fabric-fork/core/ledger/kvledger/history
+github.com/alfredom/fabric-fork/core/ledger/kvledger/msgs
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/privacyenabledstate
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/privacyenabledstate/mock
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/pvtstatepurgemgmt
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/queryutil
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/rwsetutil
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/statedb
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/statedb/statecouchdb
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/statedb/stateleveldb
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/statemetadata
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/txmgr
+github.com/alfredom/fabric-fork/core/ledger/kvledger/txmgmt/validation
+github.com/alfredom/fabric-fork/core/ledger/ledgermgmt
+github.com/alfredom/fabric-fork/core/ledger/mock
+github.com/alfredom/fabric-fork/core/ledger/pvtdatapolicy
+github.com/alfredom/fabric-fork/core/ledger/pvtdatastorage
+github.com/alfredom/fabric-fork/core/ledger/util
+github.com/alfredom/fabric-fork/core/peer
+github.com/alfredom/fabric-fork/core/policy
+github.com/alfredom/fabric-fork/core/scc
+github.com/alfredom/fabric-fork/core/scc/lscc
+github.com/alfredom/fabric-fork/core/transientstore
+github.com/alfredom/fabric-fork/gossip/api
+github.com/alfredom/fabric-fork/gossip/comm
+github.com/alfredom/fabric-fork/gossip/common
+github.com/alfredom/fabric-fork/gossip/discovery
+github.com/alfredom/fabric-fork/gossip/election
+github.com/alfredom/fabric-fork/gossip/filter
+github.com/alfredom/fabric-fork/gossip/gossip
+github.com/alfredom/fabric-fork/gossip/gossip/algo
+github.com/alfredom/fabric-fork/gossip/gossip/channel
+github.com/alfredom/fabric-fork/gossip/gossip/msgstore
+github.com/alfredom/fabric-fork/gossip/gossip/pull
+github.com/alfredom/fabric-fork/gossip/identity
+github.com/alfredom/fabric-fork/gossip/metrics
+github.com/alfredom/fabric-fork/gossip/privdata
+github.com/alfredom/fabric-fork/gossip/privdata/common
+github.com/alfredom/fabric-fork/gossip/protoext
+github.com/alfredom/fabric-fork/gossip/service
+github.com/alfredom/fabric-fork/gossip/state
+github.com/alfredom/fabric-fork/gossip/util
+github.com/alfredom/fabric-fork/integration/nwo/runner
+github.com/alfredom/fabric-fork/internal/ccmetadata
+github.com/alfredom/fabric-fork/internal/configtxgen/encoder
+github.com/alfredom/fabric-fork/internal/configtxgen/genesisconfig
+github.com/alfredom/fabric-fork/internal/configtxlator/update
+github.com/alfredom/fabric-fork/internal/fileutil
+github.com/alfredom/fabric-fork/internal/pkg/comm
+github.com/alfredom/fabric-fork/internal/pkg/gateway/config
+github.com/alfredom/fabric-fork/internal/pkg/identity
+github.com/alfredom/fabric-fork/internal/pkg/peer/blocksprovider
+github.com/alfredom/fabric-fork/internal/pkg/peer/orderers
+github.com/alfredom/fabric-fork/internal/pkg/txflags
+github.com/alfredom/fabric-fork/msp
+github.com/alfredom/fabric-fork/msp/cache
+github.com/alfredom/fabric-fork/msp/mgmt
+github.com/alfredom/fabric-fork/orderer/common/filerepo
+github.com/alfredom/fabric-fork/protoutil
+# github.com/alfredom/fabric-protos-go-fork v0.0.0-00010101000000-000000000000 => /home/alfredo/go/src/github.com/alfredom/fabric-protos-go-fork
+## explicit; go 1.17
+github.com/alfredom/fabric-protos-go-fork/common
+github.com/alfredom/fabric-protos-go-fork/gossip
+github.com/alfredom/fabric-protos-go-fork/ledger/queryresult
+github.com/alfredom/fabric-protos-go-fork/ledger/rwset
+github.com/alfredom/fabric-protos-go-fork/ledger/rwset/kvrwset
+github.com/alfredom/fabric-protos-go-fork/msp
+github.com/alfredom/fabric-protos-go-fork/orderer
+github.com/alfredom/fabric-protos-go-fork/orderer/etcdraft
+github.com/alfredom/fabric-protos-go-fork/peer
+github.com/alfredom/fabric-protos-go-fork/peer/lifecycle
+github.com/alfredom/fabric-protos-go-fork/transientstore
+# github.com/alfredom/idemix-fork v0.0.0-00010101000000-000000000000 => /home/alfredo/go/src/github.com/alfredom/idemix-fork
+## explicit; go 1.16
+github.com/alfredom/idemix-fork
+github.com/alfredom/idemix-fork/bccsp
+github.com/alfredom/idemix-fork/bccsp/keystore
+github.com/alfredom/idemix-fork/bccsp/schemes
+github.com/alfredom/idemix-fork/bccsp/schemes/dlog/bridge
+github.com/alfredom/idemix-fork/bccsp/schemes/dlog/crypto
+github.com/alfredom/idemix-fork/bccsp/schemes/dlog/crypto/translator/amcl
+github.com/alfredom/idemix-fork/bccsp/schemes/dlog/handlers
+github.com/alfredom/idemix-fork/common/flogging
+github.com/alfredom/idemix-fork/common/flogging/fabenc
+# github.com/bits-and-blooms/bitset v1.2.1
+## explicit; go 1.14
+github.com/bits-and-blooms/bitset
+# github.com/cespare/xxhash/v2 v2.1.2
 ## explicit; go 1.11
 github.com/cespare/xxhash/v2
-# github.com/containerd/containerd v1.6.18
+# github.com/consensys/gnark-crypto v0.6.0
+## explicit; go 1.16
+github.com/consensys/gnark-crypto/ecc
+github.com/consensys/gnark-crypto/ecc/bn254
+github.com/consensys/gnark-crypto/ecc/bn254/fp
+github.com/consensys/gnark-crypto/ecc/bn254/fr
+github.com/consensys/gnark-crypto/ecc/bn254/fr/mimc
+github.com/consensys/gnark-crypto/ecc/bn254/internal/fptower
+github.com/consensys/gnark-crypto/field
+github.com/consensys/gnark-crypto/field/internal/addchain
+github.com/consensys/gnark-crypto/internal/generator/config
+github.com/consensys/gnark-crypto/internal/parallel
+# github.com/containerd/cgroups v1.0.3
+## explicit; go 1.16
+github.com/containerd/cgroups/stats/v1
+# github.com/containerd/containerd v1.5.18
 ## explicit; go 1.17
+github.com/containerd/containerd/log
 github.com/containerd/containerd/pkg/userns
+github.com/containerd/containerd/sys
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
-# github.com/docker/docker v23.0.2+incompatible
+# github.com/docker/docker v20.10.24+incompatible
 ## explicit
 github.com/docker/docker/api/types/blkiodev
 github.com/docker/docker/api/types/container
@@ -38,6 +252,7 @@ github.com/docker/docker/api/types/swarm
 github.com/docker/docker/api/types/swarm/runtime
 github.com/docker/docker/api/types/versions
 github.com/docker/docker/pkg/archive
+github.com/docker/docker/pkg/fileutils
 github.com/docker/docker/pkg/homedir
 github.com/docker/docker/pkg/idtools
 github.com/docker/docker/pkg/ioutils
@@ -52,24 +267,29 @@ github.com/docker/go-connections/nat
 # github.com/docker/go-units v0.5.0
 ## explicit
 github.com/docker/go-units
-# github.com/eapache/go-resiliency v1.3.0
-## explicit; go 1.13
+# github.com/eapache/go-resiliency v1.2.0
+## explicit
 github.com/eapache/go-resiliency/breaker
-# github.com/eapache/go-xerial-snappy v0.0.0-20230111030713-bf00bc1b83b6
-## explicit; go 1.17
+# github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21
+## explicit
 github.com/eapache/go-xerial-snappy
 # github.com/eapache/queue v1.1.0
 ## explicit
 github.com/eapache/queue
-# github.com/fsnotify/fsnotify v1.6.0
-## explicit; go 1.16
+# github.com/fsnotify/fsnotify v1.4.9
+## explicit; go 1.13
 github.com/fsnotify/fsnotify
-# github.com/fsouza/go-dockerclient v1.9.7
-## explicit; go 1.19
+# github.com/fsouza/go-dockerclient v1.7.3
+## explicit; go 1.15
 github.com/fsouza/go-dockerclient
 # github.com/gogo/protobuf v1.3.2
 ## explicit; go 1.15
+github.com/gogo/protobuf/gogoproto
 github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
+# github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+## explicit
+github.com/golang/groupcache/lru
 # github.com/golang/protobuf v1.5.3
 ## explicit; go 1.9
 github.com/golang/protobuf/jsonpb
@@ -81,26 +301,10 @@ github.com/golang/protobuf/ptypes/timestamp
 # github.com/golang/snappy v0.0.4
 ## explicit
 github.com/golang/snappy
-# github.com/google/go-cmp v0.5.9
-## explicit; go 1.13
-github.com/google/go-cmp/cmp
-github.com/google/go-cmp/cmp/internal/diff
-github.com/google/go-cmp/cmp/internal/flags
-github.com/google/go-cmp/cmp/internal/function
-github.com/google/go-cmp/cmp/internal/value
-# github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
+# github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 ## explicit; go 1.14
 github.com/grpc-ecosystem/go-grpc-middleware
-# github.com/hashicorp/errwrap v1.1.0
-## explicit
-github.com/hashicorp/errwrap
-# github.com/hashicorp/go-multierror v1.1.1
-## explicit; go 1.13
-github.com/hashicorp/go-multierror
-# github.com/hashicorp/go-uuid v1.0.3
-## explicit
-github.com/hashicorp/go-uuid
-# github.com/hashicorp/go-version v1.6.0
+# github.com/hashicorp/go-version v1.4.0
 ## explicit
 github.com/hashicorp/go-version
 # github.com/hashicorp/hcl v1.0.0
@@ -115,316 +319,89 @@ github.com/hashicorp/hcl/hcl/token
 github.com/hashicorp/hcl/json/parser
 github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
-# github.com/hyperledger/fabric v2.1.1+incompatible
-## explicit
-github.com/hyperledger/fabric/bccsp
-github.com/hyperledger/fabric/bccsp/factory
-github.com/hyperledger/fabric/bccsp/idemix
-github.com/hyperledger/fabric/bccsp/idemix/bridge
-github.com/hyperledger/fabric/bccsp/idemix/handlers
-github.com/hyperledger/fabric/bccsp/pkcs11
-github.com/hyperledger/fabric/bccsp/signer
-github.com/hyperledger/fabric/bccsp/sw
-github.com/hyperledger/fabric/bccsp/utils
-github.com/hyperledger/fabric/common/capabilities
-github.com/hyperledger/fabric/common/cauthdsl
-github.com/hyperledger/fabric/common/chaincode
-github.com/hyperledger/fabric/common/channelconfig
-github.com/hyperledger/fabric/common/config
-github.com/hyperledger/fabric/common/configtx
-github.com/hyperledger/fabric/common/configtx/test
-github.com/hyperledger/fabric/common/crypto
-github.com/hyperledger/fabric/common/crypto/tlsgen
-github.com/hyperledger/fabric/common/deliver
-github.com/hyperledger/fabric/common/errors
-github.com/hyperledger/fabric/common/flogging
-github.com/hyperledger/fabric/common/flogging/fabenc
-github.com/hyperledger/fabric/common/genesis
-github.com/hyperledger/fabric/common/ledger
-github.com/hyperledger/fabric/common/ledger/blkstorage
-github.com/hyperledger/fabric/common/ledger/blkstorage/fsblkstorage
-github.com/hyperledger/fabric/common/ledger/blkstorage/fsblkstorage/msgs
-github.com/hyperledger/fabric/common/ledger/blockledger
-github.com/hyperledger/fabric/common/ledger/blockledger/fileledger
-github.com/hyperledger/fabric/common/ledger/dataformat
-github.com/hyperledger/fabric/common/ledger/util
-github.com/hyperledger/fabric/common/ledger/util/leveldbhelper
-github.com/hyperledger/fabric/common/metrics
-github.com/hyperledger/fabric/common/metrics/disabled
-github.com/hyperledger/fabric/common/policies
-github.com/hyperledger/fabric/common/policydsl
-github.com/hyperledger/fabric/common/semaphore
-github.com/hyperledger/fabric/common/util
-github.com/hyperledger/fabric/common/viperutil
-github.com/hyperledger/fabric/core/aclmgmt
-github.com/hyperledger/fabric/core/aclmgmt/resources
-github.com/hyperledger/fabric/core/chaincode/lifecycle
-github.com/hyperledger/fabric/core/chaincode/persistence
-github.com/hyperledger/fabric/core/committer
-github.com/hyperledger/fabric/core/committer/txvalidator
-github.com/hyperledger/fabric/core/committer/txvalidator/plugin
-github.com/hyperledger/fabric/core/committer/txvalidator/v14
-github.com/hyperledger/fabric/core/committer/txvalidator/v20
-github.com/hyperledger/fabric/core/committer/txvalidator/v20/plugindispatcher
-github.com/hyperledger/fabric/core/committer/txvalidator/v20/valinforetriever
-github.com/hyperledger/fabric/core/common/ccpackage
-github.com/hyperledger/fabric/core/common/ccprovider
-github.com/hyperledger/fabric/core/common/privdata
-github.com/hyperledger/fabric/core/common/sysccprovider
-github.com/hyperledger/fabric/core/common/validation
-github.com/hyperledger/fabric/core/common/validation/statebased
-github.com/hyperledger/fabric/core/config
-github.com/hyperledger/fabric/core/config/configtest
-github.com/hyperledger/fabric/core/container
-github.com/hyperledger/fabric/core/container/ccintf
-github.com/hyperledger/fabric/core/container/externalbuilder
-github.com/hyperledger/fabric/core/deliverservice
-github.com/hyperledger/fabric/core/dispatcher
-github.com/hyperledger/fabric/core/handlers/validation/api
-github.com/hyperledger/fabric/core/handlers/validation/api/capabilities
-github.com/hyperledger/fabric/core/handlers/validation/api/identities
-github.com/hyperledger/fabric/core/handlers/validation/api/policies
-github.com/hyperledger/fabric/core/handlers/validation/api/state
-github.com/hyperledger/fabric/core/handlers/validation/builtin/v12
-github.com/hyperledger/fabric/core/handlers/validation/builtin/v13
-github.com/hyperledger/fabric/core/handlers/validation/builtin/v20
-github.com/hyperledger/fabric/core/handlers/validation/builtin/v20/mocks
-github.com/hyperledger/fabric/core/ledger
-github.com/hyperledger/fabric/core/ledger/cceventmgmt
-github.com/hyperledger/fabric/core/ledger/confighistory
-github.com/hyperledger/fabric/core/ledger/kvledger
-github.com/hyperledger/fabric/core/ledger/kvledger/bookkeeping
-github.com/hyperledger/fabric/core/ledger/kvledger/history
-github.com/hyperledger/fabric/core/ledger/kvledger/msgs
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/privacyenabledstate
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/pvtstatepurgemgmt
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/queryutil
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/statecouchdb
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/statecouchdb/msgs
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/stateleveldb
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/statedb/stateleveldb/msgs
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/storageutil
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/txmgr/lockbasedtxmgr
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/validator
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/validator/internal
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/validator/statebasedval
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/validator/valimpl
-github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/version
-github.com/hyperledger/fabric/core/ledger/ledgermgmt
-github.com/hyperledger/fabric/core/ledger/ledgerstorage
-github.com/hyperledger/fabric/core/ledger/mock
-github.com/hyperledger/fabric/core/ledger/pvtdatapolicy
-github.com/hyperledger/fabric/core/ledger/pvtdatastorage
-github.com/hyperledger/fabric/core/ledger/util
-github.com/hyperledger/fabric/core/ledger/util/couchdb
-github.com/hyperledger/fabric/core/ledger/util/couchdbtest
-github.com/hyperledger/fabric/core/peer
-github.com/hyperledger/fabric/core/policy
-github.com/hyperledger/fabric/core/scc
-github.com/hyperledger/fabric/core/scc/lscc
-github.com/hyperledger/fabric/core/transientstore
-github.com/hyperledger/fabric/gossip/api
-github.com/hyperledger/fabric/gossip/comm
-github.com/hyperledger/fabric/gossip/common
-github.com/hyperledger/fabric/gossip/discovery
-github.com/hyperledger/fabric/gossip/election
-github.com/hyperledger/fabric/gossip/filter
-github.com/hyperledger/fabric/gossip/gossip
-github.com/hyperledger/fabric/gossip/gossip/algo
-github.com/hyperledger/fabric/gossip/gossip/channel
-github.com/hyperledger/fabric/gossip/gossip/msgstore
-github.com/hyperledger/fabric/gossip/gossip/pull
-github.com/hyperledger/fabric/gossip/identity
-github.com/hyperledger/fabric/gossip/metrics
-github.com/hyperledger/fabric/gossip/privdata
-github.com/hyperledger/fabric/gossip/privdata/common
-github.com/hyperledger/fabric/gossip/protoext
-github.com/hyperledger/fabric/gossip/service
-github.com/hyperledger/fabric/gossip/state
-github.com/hyperledger/fabric/gossip/util
-github.com/hyperledger/fabric/idemix
-github.com/hyperledger/fabric/integration/helpers
-github.com/hyperledger/fabric/integration/runner
-github.com/hyperledger/fabric/internal/ccmetadata
-github.com/hyperledger/fabric/internal/configtxgen/encoder
-github.com/hyperledger/fabric/internal/configtxgen/genesisconfig
-github.com/hyperledger/fabric/internal/configtxlator/update
-github.com/hyperledger/fabric/internal/pkg/comm
-github.com/hyperledger/fabric/internal/pkg/identity
-github.com/hyperledger/fabric/internal/pkg/peer/blocksprovider
-github.com/hyperledger/fabric/internal/pkg/peer/orderers
-github.com/hyperledger/fabric/msp
-github.com/hyperledger/fabric/msp/cache
-github.com/hyperledger/fabric/msp/mgmt
-github.com/hyperledger/fabric/msp/mgmt/testtools
-github.com/hyperledger/fabric/protoutil
-# github.com/hyperledger/fabric-amcl v0.0.0-20221107192335-5c75bc7be9c0
+# github.com/hyperledger/fabric-amcl v0.0.0-20210603140002-2670f91851c8
 ## explicit
 github.com/hyperledger/fabric-amcl/amcl
 github.com/hyperledger/fabric-amcl/amcl/FP256BN
-# github.com/hyperledger/fabric-chaincode-go v0.0.0-20230228194215-b84622ba6a7a
-## explicit; go 1.19
+github.com/hyperledger/fabric-amcl/core
+github.com/hyperledger/fabric-amcl/core/FP256BN
+# github.com/hyperledger/fabric-chaincode-go v0.0.0-20220920210243-7bc6fa0dd58b
+## explicit; go 1.17
 github.com/hyperledger/fabric-chaincode-go/shim
 github.com/hyperledger/fabric-chaincode-go/shim/internal
 # github.com/hyperledger/fabric-lib-go v1.0.0
 ## explicit
 github.com/hyperledger/fabric-lib-go/healthz
-# github.com/hyperledger/fabric-protos-go v0.3.0
+# github.com/hyperledger/fabric-protos-go v0.2.0
 ## explicit; go 1.17
 github.com/hyperledger/fabric-protos-go/common
-github.com/hyperledger/fabric-protos-go/gossip
 github.com/hyperledger/fabric-protos-go/ledger/queryresult
 github.com/hyperledger/fabric-protos-go/ledger/rwset
-github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset
 github.com/hyperledger/fabric-protos-go/msp
-github.com/hyperledger/fabric-protos-go/orderer
-github.com/hyperledger/fabric-protos-go/orderer/etcdraft
 github.com/hyperledger/fabric-protos-go/peer
-github.com/hyperledger/fabric-protos-go/peer/lifecycle
-github.com/hyperledger/fabric-protos-go/transientstore
-# github.com/jcmturner/aescts/v2 v2.0.0
-## explicit; go 1.13
-github.com/jcmturner/aescts/v2
-# github.com/jcmturner/dnsutils/v2 v2.0.0
-## explicit; go 1.13
-github.com/jcmturner/dnsutils/v2
-# github.com/jcmturner/gofork v1.7.6
-## explicit; go 1.7
-github.com/jcmturner/gofork/encoding/asn1
-github.com/jcmturner/gofork/x/crypto/pbkdf2
-# github.com/jcmturner/gokrb5/v8 v8.4.3
-## explicit; go 1.16
-github.com/jcmturner/gokrb5/v8/asn1tools
-github.com/jcmturner/gokrb5/v8/client
-github.com/jcmturner/gokrb5/v8/config
-github.com/jcmturner/gokrb5/v8/credentials
-github.com/jcmturner/gokrb5/v8/crypto
-github.com/jcmturner/gokrb5/v8/crypto/common
-github.com/jcmturner/gokrb5/v8/crypto/etype
-github.com/jcmturner/gokrb5/v8/crypto/rfc3961
-github.com/jcmturner/gokrb5/v8/crypto/rfc3962
-github.com/jcmturner/gokrb5/v8/crypto/rfc4757
-github.com/jcmturner/gokrb5/v8/crypto/rfc8009
-github.com/jcmturner/gokrb5/v8/gssapi
-github.com/jcmturner/gokrb5/v8/iana
-github.com/jcmturner/gokrb5/v8/iana/addrtype
-github.com/jcmturner/gokrb5/v8/iana/adtype
-github.com/jcmturner/gokrb5/v8/iana/asnAppTag
-github.com/jcmturner/gokrb5/v8/iana/chksumtype
-github.com/jcmturner/gokrb5/v8/iana/errorcode
-github.com/jcmturner/gokrb5/v8/iana/etypeID
-github.com/jcmturner/gokrb5/v8/iana/flags
-github.com/jcmturner/gokrb5/v8/iana/keyusage
-github.com/jcmturner/gokrb5/v8/iana/msgtype
-github.com/jcmturner/gokrb5/v8/iana/nametype
-github.com/jcmturner/gokrb5/v8/iana/patype
-github.com/jcmturner/gokrb5/v8/kadmin
-github.com/jcmturner/gokrb5/v8/keytab
-github.com/jcmturner/gokrb5/v8/krberror
-github.com/jcmturner/gokrb5/v8/messages
-github.com/jcmturner/gokrb5/v8/pac
-github.com/jcmturner/gokrb5/v8/types
-# github.com/jcmturner/rpc/v2 v2.0.3
-## explicit; go 1.13
-github.com/jcmturner/rpc/v2/mstypes
-github.com/jcmturner/rpc/v2/ndr
-# github.com/klauspost/compress v1.15.14
-## explicit; go 1.17
-github.com/klauspost/compress
-github.com/klauspost/compress/fse
-github.com/klauspost/compress/huff0
-github.com/klauspost/compress/internal/cpuinfo
-github.com/klauspost/compress/internal/snapref
-github.com/klauspost/compress/zstd
-github.com/klauspost/compress/zstd/internal/xxhash
-# github.com/kr/pretty v0.3.1
-## explicit; go 1.12
-# github.com/magiconair/properties v1.8.7
-## explicit; go 1.19
+# github.com/magiconair/properties v1.8.1
+## explicit
 github.com/magiconair/properties
 # github.com/miekg/pkcs11 v1.1.1
 ## explicit; go 1.12
 github.com/miekg/pkcs11
-# github.com/mitchellh/mapstructure v1.1.1
-## explicit
+# github.com/mitchellh/mapstructure v1.4.3
+## explicit; go 1.14
 github.com/mitchellh/mapstructure
-# github.com/moby/patternmatcher v0.5.0
-## explicit; go 1.19
-github.com/moby/patternmatcher
-# github.com/moby/sys/sequential v0.5.0
-## explicit; go 1.17
-github.com/moby/sys/sequential
-# github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6
+# github.com/mmcloughlin/addchain v0.4.0
+## explicit; go 1.16
+github.com/mmcloughlin/addchain
+github.com/mmcloughlin/addchain/acc
+github.com/mmcloughlin/addchain/acc/ast
+github.com/mmcloughlin/addchain/acc/ir
+github.com/mmcloughlin/addchain/acc/parse
+github.com/mmcloughlin/addchain/acc/parse/internal/parser
+github.com/mmcloughlin/addchain/acc/pass
+github.com/mmcloughlin/addchain/acc/printer
+github.com/mmcloughlin/addchain/alg
+github.com/mmcloughlin/addchain/alg/contfrac
+github.com/mmcloughlin/addchain/alg/dict
+github.com/mmcloughlin/addchain/alg/ensemble
+github.com/mmcloughlin/addchain/alg/exec
+github.com/mmcloughlin/addchain/alg/heuristic
+github.com/mmcloughlin/addchain/alg/opt
+github.com/mmcloughlin/addchain/internal/bigint
+github.com/mmcloughlin/addchain/internal/bigints
+github.com/mmcloughlin/addchain/internal/bigvector
+github.com/mmcloughlin/addchain/internal/container/heap
+github.com/mmcloughlin/addchain/internal/errutil
+github.com/mmcloughlin/addchain/internal/print
+github.com/mmcloughlin/addchain/meta
+# github.com/moby/sys/mount v0.2.0
+## explicit; go 1.14
+github.com/moby/sys/mount
+# github.com/moby/sys/mountinfo v0.6.2
+## explicit; go 1.16
+github.com/moby/sys/mountinfo
+# github.com/moby/term v0.0.0-20201216013528-df9cb8a40635
 ## explicit; go 1.13
 github.com/moby/term
 github.com/moby/term/windows
 # github.com/morikuni/aec v1.0.0
 ## explicit
 github.com/morikuni/aec
-# github.com/nxadm/tail v1.4.8
-## explicit; go 1.13
-github.com/nxadm/tail
-github.com/nxadm/tail/ratelimiter
-github.com/nxadm/tail/util
-github.com/nxadm/tail/watch
-github.com/nxadm/tail/winfile
-# github.com/onsi/ginkgo v1.16.5
-## explicit; go 1.16
-github.com/onsi/ginkgo
-github.com/onsi/ginkgo/config
-github.com/onsi/ginkgo/formatter
-github.com/onsi/ginkgo/internal/codelocation
-github.com/onsi/ginkgo/internal/containernode
-github.com/onsi/ginkgo/internal/failer
-github.com/onsi/ginkgo/internal/global
-github.com/onsi/ginkgo/internal/leafnodes
-github.com/onsi/ginkgo/internal/remote
-github.com/onsi/ginkgo/internal/spec
-github.com/onsi/ginkgo/internal/spec_iterator
-github.com/onsi/ginkgo/internal/specrunner
-github.com/onsi/ginkgo/internal/suite
-github.com/onsi/ginkgo/internal/testingtproxy
-github.com/onsi/ginkgo/internal/writer
-github.com/onsi/ginkgo/reporters
-github.com/onsi/ginkgo/reporters/stenographer
-github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable
-github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty
-github.com/onsi/ginkgo/types
-# github.com/onsi/gomega v1.27.6
-## explicit; go 1.18
-github.com/onsi/gomega
-github.com/onsi/gomega/format
-github.com/onsi/gomega/internal
-github.com/onsi/gomega/internal/gutil
-github.com/onsi/gomega/matchers
-github.com/onsi/gomega/matchers/support/goraph/bipartitegraph
-github.com/onsi/gomega/matchers/support/goraph/edge
-github.com/onsi/gomega/matchers/support/goraph/node
-github.com/onsi/gomega/matchers/support/goraph/util
-github.com/onsi/gomega/types
 # github.com/opencontainers/go-digest v1.0.0
 ## explicit; go 1.13
 github.com/opencontainers/go-digest
-# github.com/opencontainers/image-spec v1.0.3-0.20211202183452-c5a74bcca799
+# github.com/opencontainers/image-spec v1.0.2
 ## explicit
 github.com/opencontainers/image-spec/specs-go
 github.com/opencontainers/image-spec/specs-go/v1
 # github.com/opencontainers/runc v1.1.5
 ## explicit; go 1.16
 github.com/opencontainers/runc/libcontainer/user
-# github.com/pelletier/go-toml v1.9.5
+# github.com/pelletier/go-toml v1.8.1
 ## explicit; go 1.12
 github.com/pelletier/go-toml
-# github.com/pierrec/lz4/v4 v4.1.17
-## explicit; go 1.14
-github.com/pierrec/lz4/v4
-github.com/pierrec/lz4/v4/internal/lz4block
-github.com/pierrec/lz4/v4/internal/lz4errors
-github.com/pierrec/lz4/v4/internal/lz4stream
-github.com/pierrec/lz4/v4/internal/xxh32
+# github.com/pierrec/lz4 v2.6.0+incompatible
+## explicit
+github.com/pierrec/lz4
+github.com/pierrec/lz4/internal/xxh32
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
@@ -437,13 +414,12 @@ github.com/rcrowley/go-metrics
 # github.com/sirupsen/logrus v1.9.0
 ## explicit; go 1.13
 github.com/sirupsen/logrus
-# github.com/spf13/afero v1.9.3
-## explicit; go 1.16
+# github.com/spf13/afero v1.3.1
+## explicit; go 1.13
 github.com/spf13/afero
-github.com/spf13/afero/internal/common
 github.com/spf13/afero/mem
-# github.com/spf13/cast v1.5.0
-## explicit; go 1.18
+# github.com/spf13/cast v1.3.1
+## explicit
 github.com/spf13/cast
 # github.com/spf13/jwalterweatherman v1.1.0
 ## explicit
@@ -451,17 +427,16 @@ github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.5
 ## explicit; go 1.12
 github.com/spf13/pflag
-# github.com/spf13/viper v1.2.1
-## explicit
-github.com/spf13/viper
-# github.com/stretchr/objx v0.5.0
+# github.com/spf13/viper v1.7.0
 ## explicit; go 1.12
-github.com/stretchr/objx
-# github.com/stretchr/testify v1.8.2
+github.com/spf13/viper
+# github.com/stretchr/testify v1.8.1
 ## explicit; go 1.13
 github.com/stretchr/testify/assert
-github.com/stretchr/testify/mock
 github.com/stretchr/testify/require
+# github.com/subosito/gotenv v1.2.0
+## explicit
+github.com/subosito/gotenv
 # github.com/sykesm/zap-logfmt v0.0.4
 ## explicit; go 1.13
 github.com/sykesm/zap-logfmt
@@ -479,23 +454,26 @@ github.com/syndtr/goleveldb/leveldb/opt
 github.com/syndtr/goleveldb/leveldb/storage
 github.com/syndtr/goleveldb/leveldb/table
 github.com/syndtr/goleveldb/leveldb/util
-# github.com/tedsuo/ifrit v0.0.0-20230330192023-5cba443a66c4
+# github.com/tedsuo/ifrit v0.0.0-20220120221754-dd274de71113
 ## explicit
 github.com/tedsuo/ifrit
-# github.com/willf/bitset v0.0.0-00010101000000-000000000000 => github.com/bits-and-blooms/bitset v1.6.0
-## explicit; go 1.14
-github.com/willf/bitset
-# go.uber.org/atomic v1.9.0
+# go.opencensus.io v0.22.4
+## explicit; go 1.13
+go.opencensus.io
+go.opencensus.io/internal
+go.opencensus.io/trace
+go.opencensus.io/trace/internal
+go.opencensus.io/trace/tracestate
+# go.uber.org/atomic v1.7.0
 ## explicit; go 1.13
 go.uber.org/atomic
-# go.uber.org/multierr v1.8.0
-## explicit; go 1.14
+# go.uber.org/multierr v1.6.0
+## explicit; go 1.12
 go.uber.org/multierr
-# go.uber.org/zap v1.24.0
-## explicit; go 1.19
+# go.uber.org/zap v1.19.0
+## explicit; go 1.13
 go.uber.org/zap
 go.uber.org/zap/buffer
-go.uber.org/zap/internal
 go.uber.org/zap/internal/bufferpool
 go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
@@ -503,77 +481,33 @@ go.uber.org/zap/zapcore
 go.uber.org/zap/zapgrpc
 # golang.org/x/crypto v0.1.0
 ## explicit; go 1.17
-golang.org/x/crypto/md4
-golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/sha3
-# golang.org/x/mod v0.9.0
+# golang.org/x/net v0.7.0
 ## explicit; go 1.17
-golang.org/x/mod/semver
-# golang.org/x/net v0.8.0
-## explicit; go 1.17
-golang.org/x/net/html
-golang.org/x/net/html/atom
-golang.org/x/net/html/charset
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
-golang.org/x/net/internal/socks
 golang.org/x/net/internal/timeseries
-golang.org/x/net/proxy
 golang.org/x/net/trace
-# golang.org/x/sys v0.6.0
+# golang.org/x/sys v0.5.0
 ## explicit; go 1.17
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/text v0.8.0
+# golang.org/x/text v0.7.0
 ## explicit; go 1.17
-golang.org/x/text/encoding
-golang.org/x/text/encoding/charmap
-golang.org/x/text/encoding/htmlindex
-golang.org/x/text/encoding/internal
-golang.org/x/text/encoding/internal/identifier
-golang.org/x/text/encoding/japanese
-golang.org/x/text/encoding/korean
-golang.org/x/text/encoding/simplifiedchinese
-golang.org/x/text/encoding/traditionalchinese
-golang.org/x/text/encoding/unicode
-golang.org/x/text/internal/language
-golang.org/x/text/internal/language/compact
-golang.org/x/text/internal/tag
-golang.org/x/text/internal/utf8internal
-golang.org/x/text/language
-golang.org/x/text/runes
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
-# golang.org/x/tools v0.7.0
-## explicit; go 1.18
-golang.org/x/tools/cmd/stringer
-golang.org/x/tools/go/gcexportdata
-golang.org/x/tools/go/internal/packagesdriver
-golang.org/x/tools/go/packages
-golang.org/x/tools/go/types/objectpath
-golang.org/x/tools/internal/event
-golang.org/x/tools/internal/event/core
-golang.org/x/tools/internal/event/keys
-golang.org/x/tools/internal/event/label
-golang.org/x/tools/internal/gcimporter
-golang.org/x/tools/internal/gocommand
-golang.org/x/tools/internal/packagesinternal
-golang.org/x/tools/internal/pkgbits
-golang.org/x/tools/internal/tokeninternal
-golang.org/x/tools/internal/typeparams
-golang.org/x/tools/internal/typesinternal
-# google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f
-## explicit; go 1.19
-google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v1.53.0
+# google.golang.org/genproto v0.0.0-20220718134204-073382fd740c
 ## explicit; go 1.17
+google.golang.org/genproto/googleapis/rpc/status
+# google.golang.org/grpc v1.48.0
+## explicit; go 1.14
 google.golang.org/grpc
 google.golang.org/grpc/attributes
 google.golang.org/grpc/backoff
@@ -659,13 +593,17 @@ google.golang.org/protobuf/types/known/anypb
 google.golang.org/protobuf/types/known/durationpb
 google.golang.org/protobuf/types/known/emptypb
 google.golang.org/protobuf/types/known/timestamppb
-# gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+# gopkg.in/ini.v1 v1.51.0
 ## explicit
-gopkg.in/tomb.v1
+gopkg.in/ini.v1
 # gopkg.in/yaml.v2 v2.4.0
 ## explicit; go 1.15
 gopkg.in/yaml.v2
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
-# github.com/willf/bitset => github.com/bits-and-blooms/bitset v1.6.0
+# github.com/alfredom/fabric-fork => /home/alfredo/go/src/github.com/alfredom/fabric-fork
+# github.com/alfredom/fabric-protos-go-fork => /home/alfredo/go/src/github.com/alfredom/fabric-protos-go-fork
+# github.com/alfredom/idemix-fork => /home/alfredo/go/src/github.com/alfredom/idemix-fork
+# github.com/hyperledger/fabric v2.1.1+incompatible => github.com/alfredomusumeci/fabric v1.4.0-rc1.0.20230509094955-e9ac1c8f7210
+# github.com/willf/bitset v1.7.0 => github.com/bits-and-blooms/bitset v1.7.0

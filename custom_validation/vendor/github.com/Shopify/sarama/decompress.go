@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"compress/gzip"
 	"fmt"
-	"io"
+	"io/ioutil"
 	"sync"
 
-	snappy "github.com/eapache/go-xerial-snappy"
-	"github.com/pierrec/lz4/v4"
+	"github.com/eapache/go-xerial-snappy"
+	"github.com/pierrec/lz4"
 )
 
 var (
@@ -26,35 +26,37 @@ func decompress(cc CompressionCodec, data []byte) ([]byte, error) {
 	case CompressionNone:
 		return data, nil
 	case CompressionGZIP:
-		var err error
-		reader, ok := gzipReaderPool.Get().(*gzip.Reader)
-		if !ok {
-			reader, err = gzip.NewReader(bytes.NewReader(data))
+		var (
+			err        error
+			reader     *gzip.Reader
+			readerIntf = gzipReaderPool.Get()
+		)
+		if readerIntf != nil {
+			reader = readerIntf.(*gzip.Reader)
 		} else {
-			err = reader.Reset(bytes.NewReader(data))
-		}
-
-		if err != nil {
-			return nil, err
+			reader, err = gzip.NewReader(bytes.NewReader(data))
+			if err != nil {
+				return nil, err
+			}
 		}
 
 		defer gzipReaderPool.Put(reader)
 
-		return io.ReadAll(reader)
+		if err := reader.Reset(bytes.NewReader(data)); err != nil {
+			return nil, err
+		}
+
+		return ioutil.ReadAll(reader)
 	case CompressionSnappy:
 		return snappy.Decode(data)
 	case CompressionLZ4:
-		reader, ok := lz4ReaderPool.Get().(*lz4.Reader)
-		if !ok {
-			reader = lz4.NewReader(bytes.NewReader(data))
-		} else {
-			reader.Reset(bytes.NewReader(data))
-		}
+		reader := lz4ReaderPool.Get().(*lz4.Reader)
 		defer lz4ReaderPool.Put(reader)
 
-		return io.ReadAll(reader)
+		reader.Reset(bytes.NewReader(data))
+		return ioutil.ReadAll(reader)
 	case CompressionZSTD:
-		return zstdDecompress(ZstdDecoderParams{}, nil, data)
+		return zstdDecompress(nil, data)
 	default:
 		return nil, PacketDecodingError{fmt.Sprintf("invalid compression specified (%d)", cc)}
 	}

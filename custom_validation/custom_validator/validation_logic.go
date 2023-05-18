@@ -1,19 +1,19 @@
-package customvalidator
+package custom_validator
 
 import (
 	"fmt"
 
+	commonerrors "github.com/alfredom/fabric-fork/common/errors"
+	"github.com/alfredom/fabric-fork/common/flogging"
+	"github.com/alfredom/fabric-fork/core/common/validation/statebased"
+	vc "github.com/alfredom/fabric-fork/core/handlers/validation/api/capabilities"
+	vi "github.com/alfredom/fabric-fork/core/handlers/validation/api/identities"
+	vp "github.com/alfredom/fabric-fork/core/handlers/validation/api/policies"
+	vs "github.com/alfredom/fabric-fork/core/handlers/validation/api/state"
+	"github.com/alfredom/fabric-fork/protoutil"
+	"github.com/alfredom/fabric-protos-go-fork/common"
+	"github.com/alfredom/fabric-protos-go-fork/peer"
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/hyperledger/fabric-protos-go/peer"
-	commonerrors "github.com/hyperledger/fabric/common/errors"
-	"github.com/hyperledger/fabric/common/flogging"
-	"github.com/hyperledger/fabric/core/common/validation/statebased"
-	vc "github.com/hyperledger/fabric/core/handlers/validation/api/capabilities"
-	vi "github.com/hyperledger/fabric/core/handlers/validation/api/identities"
-	vp "github.com/hyperledger/fabric/core/handlers/validation/api/policies"
-	vs "github.com/hyperledger/fabric/core/handlers/validation/api/state"
-	"github.com/hyperledger/fabric/protoutil"
 	"github.com/pkg/errors"
 )
 
@@ -176,8 +176,6 @@ func (vscc *Validator) Validate(
 		return policyErr(err)
 	}
 
-
-
 	// txverr := vscc.stateBasedValidator.Validate(
 	// 	namespace,
 	// 	block.Header.Number,
@@ -196,8 +194,12 @@ func (vscc *Validator) Validate(
 	// Time based validation
 	fmt.Printf("Time based validation\n")
 	// throw error temporarily
-	err = fmt.Errorf("Time based validation failed")
-	
+	if true {
+		err = fmt.Errorf("Time based validation failed")
+		vscc.stateBasedValidator.PostValidate(namespace, block.Header.Number, uint64(txPosition), err)
+		return policyErr(err)
+	}
+
 	vscc.stateBasedValidator.PostValidate(namespace, block.Header.Number, uint64(txPosition), nil)
 	return nil
 }

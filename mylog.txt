@@ -1,0 +1,5 @@
+NAMES CONTAINER ID
+cli 744d032f965e
+orderer.example.com 738ef2a21155
+peer0.org1.example.com f61cc3f3c334
+peer0.org2.example.com 499f8bf83a2e
